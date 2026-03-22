@@ -380,7 +380,7 @@ Format your responses with:
 
 Use bullet points for readability and include emojis for visual appeal. Be friendly and professional.`;
 
-                    const response = await fetch(`http://localhost/api1.php?role=${encodeURIComponent(roleValue)}&prompt=${encodeURIComponent(promptValue)}`);
+                    const response = await fetch(`http://localhost/api.php?role=${encodeURIComponent(roleValue)}&prompt=${encodeURIComponent(promptValue)}`);
                     if (!response.ok) {
                         throw new Error('API request failed');
                     }
